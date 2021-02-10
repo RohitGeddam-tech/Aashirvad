@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import AboutUs from './Components/AboutUs';
+import Services from './Components/Services';
+import Offers from './Components/Offers';
+import Contacts from './Components/Contacts';
+import Footer from './Components/Footer';
 
-function App() {
+const View = () => {
+  return(
+    <div className='App'>
+      <Header />
+      <Home />
+      
+      <section>
+      <AboutUs />
+      </section>
+      <section className='sm'>
+        <Services />
+      </section>
+      <section>
+        <Offers />
+      </section>
+      <section>
+        <Contacts />
+      </section>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  )
+}
+
+const App=() => {
+  const[isMobile, setMobile] = useState(
+    window.matchMedia('(max-width:350px)').matches
+);
+useEffect(()=>{
+    window.addEventListener('resize', ()=>{
+        setMobile(window.matchMedia('(max-width:350px)').matches)
+    })
+})
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {isMobile ? <div>your mobile is not compatible to access this website</div> : <View />}
     </div>
   );
 }

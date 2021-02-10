@@ -1,0 +1,140 @@
+/*Service page starts*/
+
+.service{
+    height: 650px;
+    width: 100%;
+    background-color: #0c4480;
+  }
+
+  .intro{
+    height: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-style: bold;
+    padding-top: 29px;
+  }
+  
+  .head img{
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .cent{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170.6%;
+  text-align: center;
+  color: #FFFFFF;
+  }
+  
+  .paracontainer{
+    width: 70%;
+    margin: auto;
+  }
+  
+  .disp{
+    display: block;
+    width: 90%;
+    height: 50%;
+    margin-left: 8%;
+    margin-top: 80px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .dispscroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dispscroll{
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .pic{
+    display: inline-block;
+    position: relative;
+    margin-left: 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 215px;
+    height: 215px;
+    border: 2px solid white;
+  }
+  
+  .pic h2{
+    height: 10px;
+    width: 110px;
+    margin-left: 80px;
+  }
+
+  .pic img{
+    height: 110px;
+    width: 110px;
+    margin-left: 50px;
+  }
+  
+  .pic h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170.6%;
+    text-align: center;
+  }
+
+  /*mobile view*/
+  
+  .mobpic{
+    display: inline-block;
+    position: relative;
+    margin-left: 15%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 215px;
+    height: 215px;
+    border: 2px solid white;
+  }
+
+  .mobpic h2{
+    height: 10px;
+    width: 110px;
+    margin-left: 80px;
+  }
+
+  .mobpic img{
+    height: 110px;
+    width: 110px;
+    margin-left: 50px;
+  }
+
+  .mobpic h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170.6%;
+    text-align: center;
+  }
+
+  /*mobile view ends*/
+
+
+  /*Service page ends*/
