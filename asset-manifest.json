@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Aashirvad/static/css/main.b778f24d.chunk.css",
+    "main.js": "/Aashirvad/static/js/main.e79192df.chunk.js",
+    "main.js.map": "/Aashirvad/static/js/main.e79192df.chunk.js.map",
+    "runtime-main.js": "/Aashirvad/static/js/runtime-main.99ba174e.js",
+    "runtime-main.js.map": "/Aashirvad/static/js/runtime-main.99ba174e.js.map",
+    "static/js/2.cb7c16d7.chunk.js": "/Aashirvad/static/js/2.cb7c16d7.chunk.js",
+    "static/js/2.cb7c16d7.chunk.js.map": "/Aashirvad/static/js/2.cb7c16d7.chunk.js.map",
+    "static/js/3.abffb897.chunk.js": "/Aashirvad/static/js/3.abffb897.chunk.js",
+    "static/js/3.abffb897.chunk.js.map": "/Aashirvad/static/js/3.abffb897.chunk.js.map",
+    "index.html": "/Aashirvad/index.html",
+    "static/css/main.b778f24d.chunk.css.map": "/Aashirvad/static/css/main.b778f24d.chunk.css.map",
+    "static/js/2.cb7c16d7.chunk.js.LICENSE.txt": "/Aashirvad/static/js/2.cb7c16d7.chunk.js.LICENSE.txt",
+    "static/media/cover1.e9e80845.jpg": "/Aashirvad/static/media/cover1.e9e80845.jpg",
+    "static/media/cover2.dea2ddd5.jpg": "/Aashirvad/static/media/cover2.dea2ddd5.jpg",
+    "static/media/location1.8fbd6c7f.jpg": "/Aashirvad/static/media/location1.8fbd6c7f.jpg",
+    "static/media/offers.b540ba6d.jpg": "/Aashirvad/static/media/offers.b540ba6d.jpg",
+    "static/media/offers2.0cf2d5ed.jpg": "/Aashirvad/static/media/offers2.0cf2d5ed.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99ba174e.js",
+    "static/js/2.cb7c16d7.chunk.js",
+    "static/css/main.b778f24d.chunk.css",
+    "static/js/main.e79192df.chunk.js"
+  ]
+}
