@@ -33,10 +33,11 @@ const MobList = () => {
     )
 }
 
+
 const Mobile = () => {
     return (
         <Carousel className='homecarousel'>
-            <Carousel.Item class='itemsize'>
+            <Carousel.Item className='itemsize'>
             <div className='mobdet'>
                 <h3 className='mobh'>Banner Title</h3>
                 <div className='mobdata'>

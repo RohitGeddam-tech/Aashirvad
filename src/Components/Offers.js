@@ -6,12 +6,51 @@ import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import { Button, CardDeck } from 'react-bootstrap';
 import MultiCarouselPage from './MultiCarosel';
+import heart from './Photos/heart1.jpg';
+
+const Scrollmob = () => {
+  return(
+    <div className='offersdisp'>
+            <div className='offersdispscroll'>
+                <div className='offersmobpic'>
+                    <img src={scrn}/>
+                    <h3>Test Name</h3>
+                    <h4>Rs.600</h4>
+                    <p>Kristy is an art director living in New York.</p>
+                    <a className='ui button btnread'>Read More</a>
+                </div>
+                <div className='offersmobpic'>
+                    <img src={scrn}/>
+                    <h3>Test Name</h3>
+                    <h4>Rs.600</h4>
+                    <p>Kristy is an art director living in New York.</p>
+                    <a className='ui button btnread'>Read More</a>
+                </div>
+                <div className='offersmobpic'>
+                    <img src={scrn}/>
+                    <h3>Test Name</h3>
+                    <h4>Rs.600</h4>
+                    <p>Kristy is an art director living in New York.</p>
+                    <a className='ui button btnread'>Read More</a>
+                </div>
+                <div className='offersmobpic'>
+                    <img src={scrn}/>
+                    <h3>Test Name</h3>
+                    <h4>Rs.600</h4>
+                    <p>Kristy is an art director living in New York.</p>
+                    <a className='ui button btnread'>Read More</a>
+                </div>
+            </div>
+        </div>
+  )
+}
+
 
 const Mobile = () => {
   return (
     <Carousel className='carouselsize'>
         <Carousel.Item className='mobcarouselflow'>
-        <Card className='mobcardsize'>
+        {/* <Card className='mobcardsize'>
           <Card.Img className='imgincard' variant='top' src={scrn} />
           <Card.Body>
             <Card.Title>TEST NAME</Card.Title>
@@ -19,10 +58,12 @@ const Mobile = () => {
             <Card.Text>  Kristy is an art director living in New York.</Card.Text>
             <Button variant='primary'>BOOK NOW</Button>
           </Card.Body>
-        </Card> 
+        </Card>  */}
+        <Scrollmob />
+
         </Carousel.Item>
   
-        <Carousel.Item className='mobcarouselflow'>
+        {/* <Carousel.Item className='mobcarouselflow'>
         <Card className='mobcardsize'>
           <Card.Img className='imgincard' variant='top' src={scrn} />
           <Card.Body>
@@ -32,7 +73,7 @@ const Mobile = () => {
             <Button variant='primary'>BOOK NOW</Button>
           </Card.Body>
         </Card>  
-        </Carousel.Item>
+        </Carousel.Item> */}
       </Carousel>
   )
 }

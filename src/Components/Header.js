@@ -32,7 +32,7 @@ const MobileList =()=>{
                     setActive(!isActive);
                 }}
             >
-                {isActive ? <i className='big x icon'></i> : <i className='bars icon'></i>}
+                {isActive ? <i className='big x icon'></i> : <i className='large bars icon'></i>}
             </a>
             {isActive && <div className='navbtn'>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)' }}> About Us</a>
@@ -47,6 +47,30 @@ const MobileList =()=>{
     )
 }
 
+const MobList=()=>{
+    const [isClicked, setClicked] = useState(false);
+    return(
+        <>
+            <a
+                className='big bars icon'
+                onClick={()=>{
+                    setClicked(!isClicked);
+                }}
+            >
+                {isClicked ? <i className='big x icon'></i> : <i className='big bars icon'></i>}
+            </a>
+            {isClicked && <div className='navmobbtn'>
+                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)' }}> About Us</a>
+                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Services</a>
+                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Pathological Equipments</a>
+                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Contact Us</a>
+                <div class="itembtn">
+                    <button class="ui button">BOOK AN APPOINTMENT</button>
+                </div>
+            </div>}
+        </>
+    )    
+}
 
 const Header = () => {
     const[isMobile, setMobile] = useState(
@@ -57,7 +81,16 @@ const Header = () => {
             setMobile(window.matchMedia('(max-width:750px)').matches)
         })
     })
-    
+
+    // const[isView, setView] = useState(
+    //     window.matchMedia('(max-width:404px)').matches
+    // );
+    // useEffect(()=>{
+    //     window.addEventListener('resize', ()=>{
+    //         setView(window.matchMedia('(max-width:404px)').matches)
+    //     })
+    // })
+
     return (
         <header>
             <nav className='navbar navbar-secondary' style={{width: '100%'}}>

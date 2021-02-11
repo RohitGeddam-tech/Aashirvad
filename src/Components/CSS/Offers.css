@@ -6,6 +6,7 @@
     background: #EBEBEB;
 }
   
+
 .intr{
     display: flex;
     align-items: center;
@@ -34,6 +35,9 @@
     width: 20%;
     height: fit-content;
     margin-left: 5%;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .carouselflow{
@@ -41,6 +45,7 @@
     height: 90%;
     margin-left: 10%;
     margin-top: 3%;
+    border: 2px solid red;
 }
 
 .carouselsize{
@@ -48,6 +53,78 @@
     height: 78%;
     display: flex;
     margin-top: 20px;
+    border: 2px solid red;
+}
+
+/* .cardoverload{
+    display: block;
+    width: 90%;
+    height: 80%;
+    margin-left: 4%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+} */
+
+.deskoffersdisp{
+    display: block;
+    width: 100%;
+    height: 90%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border: 2px solid green;
+}
+
+.deskofferdispscroll::-webkit-scrollbar{
+    display: none;
+}
+
+.deskofferdisp::-webkit-scrollbar{
+    display: none;
+}
+
+.deskoffersdispscroll{
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.deskoffersmobpic{
+    display: inline-block;
+    position: relative;
+    margin-left: 3.7%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 205px;
+    height: 100%;
+    border: 2px solid white;
+    background: white;
+}
+
+.deskoffersmobpic img{
+    width: 200px;
+    height: 170px;
+}
+
+.deskoffersmobpic p{
+    font-size: 14px;
+    border: 2px solid violet;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deskoffersmobpic h3{
+    font-size: 18px;
+    color: turquoise;
+    border: 2px solid black;
+    margin-bottom: 0 !important;
+}
+
+.deskoffersmobpic h4{
+    font-size: 18px;
+    border: 2px solid black;
+    margin-top: 8px !important;
 }
 
 /*mob view starts*/
@@ -70,7 +147,46 @@
     height: 60%;
 }
 
+.offersdisp{
+    display: block;
+    width: 90%;
+    height: 90%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
+.offerdispscroll::-webkit-scrollbar{
+    display: none;
+}
+
+.offerdisp::-webkit-scrollbar{
+    display: none;
+}
+
+.offersdispscroll{
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.offersmobpic{
+    display: inline-block;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 255px;
+    height: 375px;
+    border: 2px solid white;
+    background: white;
+}
+
+.offersmobpic img{
+    width: 250px;
+    height: 170px;
+}
 /*mob view ends*/
 
 /*Offers page ends*/
