@@ -4,7 +4,6 @@
 .footerbox{
     width: 100%;
     background: #EBEBEB;
-    height: 200px;
     border: 2px solid black;
 }
 
@@ -25,12 +24,13 @@
     width: 100%;
     height: 60px;
     border: 2px solid black;
+    margin-bottom: 15px;
 }
 
 .titlenames{
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 17px;
     line-height: 20px;
     text-transform: uppercase;
     color: #092F57; 
@@ -57,6 +57,7 @@
 .secondrectangle{
     width: 100%;
     height: 25px;
+    margin-top: 15px;
 }
 
 .innerrectangle{
@@ -74,7 +75,7 @@
 .lastrectangle{
     width: 100%;
     height: 15px;
-    padding-top: 5px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
