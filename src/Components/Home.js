@@ -9,7 +9,6 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const List = () => {
     return (
-       
         <div className='det'>
             <h1 className='h'>Banner Title</h1>
             <div className='tir'>
@@ -21,9 +20,9 @@ const List = () => {
                 </div>
             </div>
         </div>
-        
     )
 }
+
 
 const MobList = () => {
     return (
@@ -32,7 +31,6 @@ const MobList = () => {
         </div>
     )
 }
-
 
 const Mobile = () => {
     return (
@@ -50,19 +48,7 @@ const Mobile = () => {
                 </div>
             </div> 
             </Carousel.Item>
-            {/* <Carousel.Item>
-            <div className='mobdet'>
-                <h3 className='mobh'>Banner Title</h3>
-                <div className='mobdata'>
-                    <p className='lead mobp'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
-                    </p>
-                    <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
-                    </div>
-                </div>
-            </div> 
-            </Carousel.Item> */}
+            
         </Carousel>    
     )
 }
@@ -78,12 +64,13 @@ const Home = () => {
     })
     return (
         <div className='firstpage'>
-            <div className='backimg'>
-                {isMobile ?
+            
+                {isMobile ? <div className='backimg'>
                     <img className='firstimg' src={cover2} />
+                    </div>
                     : <MobList />}
                 {isMobile ? <Mobile /> : <List />}
-            </div>
+            
         </div>
     )
 }

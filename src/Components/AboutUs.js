@@ -30,16 +30,17 @@ const MobList = () => {
 
 const AboutUs = () => {
     const [isMobile, setMobile] = useState(
-        window.matchMedia('(max-width:750px)').matches
+        window.matchMedia('(max-width:780px)').matches
     );
     useEffect(() => {
         window.addEventListener('resize', () => {
-            setMobile(window.matchMedia('(max-width:750px)').matches)
+            setMobile(window.matchMedia('(max-width:780px)').matches)
         })
     })
     return (
         <div className='firstus'>
-            {isMobile ? <div className='Mobcontentbox'>
+            {isMobile ?
+            <div className='Mobcontentbox'>
             <div className='texttitle'>
                 <h3 className='mobh'>About us <img className='mobline' src={line} alt='...' /> </h3>
             </div>
@@ -56,7 +57,7 @@ const AboutUs = () => {
         </div> : <List />}
             {/* in desktop version <list /> from first ismobile state and <moblist /> from ismobile 2 will be accessed
             and in mobile view the opposite will happen*/}
-            {isMobile ? <h1 className='hello'>hello</h1> : <MobList />}
+            {isMobile ? <h1 className='hello'>hello</h1> :<MobList />}
         </div>
     )
 }

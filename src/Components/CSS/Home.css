@@ -2,7 +2,7 @@
 
 .firstpage{
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-flow: column wrap;
   }
@@ -34,9 +34,9 @@
 
   .det{
     position: absolute;
-    left: 10%;
-    margin-top: 250px;
-    height: 55%;
+    margin-top: 150px;
+    margin-left: 70px;
+    height: 400px;
     width: 50%;
     background: rgba(255, 255, 255, 0.8);
   }
@@ -45,8 +45,8 @@
     margin: auto;
     text-transform: uppercase;
     padding-top: 50px;
-    font-style: normal;
-    font-weight: bold;
+    font-style: bold;
+    font-weight: bolder;
     font-size: 40px;
     text-align: center;
     color: rgba(9, 47, 87, 1);
@@ -54,9 +54,8 @@
   
   .tir{
     width: 80%;
-    height: 70%;
+    height: 62%;
     margin-left: 10%;
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +65,10 @@
   .lead.p{
     text-align: center;
     font-size: 20px;
+    margin-bottom: 10%;
+    color: #092F57;
+    font-style: normal;
+    font-weight: normal;
   }
 
   .ui.button{
@@ -73,6 +76,7 @@
     background: #0c4480;
   }
 
+  
 
   .mobdet{
     margin-left: 5%;
@@ -97,7 +101,6 @@
     font-size: 30px;
     text-align: center;
     color: rgba(9, 47, 87, 1);
-
   }
 
   .mobdata{

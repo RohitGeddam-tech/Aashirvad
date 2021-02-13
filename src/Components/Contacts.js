@@ -43,13 +43,13 @@ const Desksecond = () => {
     return(
         <div className='mainsheet'>
             <div className='imgsheet'>
-                <img className='sheetimg' src={call} />
-                <img className='sheetimg' src={email} />
+                <a href='tel:++912226711340'><img className='sheetimg' src={call} /></a>
+                <a href='mailto:webmaster@example.com'><img className='sheetimg' src={email} /></a>
                 <img className='sheetimg' src={location} />
             </div>
             <div className='contentsheet'>
-                <span class="theheader">+91 22 2671 1340</span>
-                <span class="theheader">contact@aashirwadlabs.com</span>
+                <a href='tel:++912226711340' className='theheader'><span class="theheader">+91 22 2671 1340</span></a>
+                <a href='mailto:contact@aashirwadlabs.com' className='theheader'><span class="theheader">contact@aashirwadlabs.com</span></a>
                 <p class="theheader">Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
             </div>
         </div>
@@ -60,13 +60,13 @@ const Mobsecond = () => {
     return(
         <div className='mainmobsheet'>
             <div className='imgmobsheet'>
-                <img className='sheetmobimg' src={call} />
-                <img className='sheetmobimg' src={email} />
+                <a href='tel:++912226711340'><img className='sheetmobimg' src={call} /></a>
+                <a href='mailto:webmaster@example.com'><img className='sheetmobimg' src={email} /></a>
                 <img className='sheetmobimg' src={location} />
             </div>
             <div className='contentmobsheet'>
-                <span class="themobheader">+91 22 2671 1340</span>
-                <p class="themobheader">contact@aashirwadlabs.com</p>
+                <a href='tel:+912226711340' className='aspanmob'><span class="themobheader">+91 22 2671 1340</span></a>
+                <a href='mailto:contact@aashirwadlabs.com' className='amob'><span class="themobheader">contact@aashirwadlabs.com</span></a>
                 <p class="themobheader">Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
             </div>
         </div>

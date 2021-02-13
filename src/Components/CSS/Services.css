@@ -1,9 +1,10 @@
 /*Service page starts*/
 
 .service{
-    height: 650px;
+    height: 550px;
     width: 100%;
     background-color: #0c4480;
+    border: 2px solid khaki;
   }
 
 
@@ -11,6 +12,7 @@
     height: 35%;
     display: flex;
     flex-flow: column nowrap;
+    border: 2px solid khaki;
   }
 
   .head{
@@ -41,6 +43,7 @@
   .paracontainer{
     width: 70%;
     margin: auto;
+    border: 2px solid khaki;
   }
   
   .disp{
@@ -51,6 +54,7 @@
     margin-top: 80px;
     overflow-x: hidden;
     box-sizing: border-box;
+    border: 2px solid khaki;
   }
 
   .dispscroll::-webkit-scrollbar {
@@ -62,6 +66,7 @@
     white-space: nowrap;
     overflow-x: scroll;
     scrollbar-width: none;
+    border: 2px solid khaki;
   }
 
   .pic{
