@@ -35,7 +35,7 @@ const MobileList =()=>{
                 {isActive ? <i className='big x icon'></i> : <i className='large bars icon'></i>}
             </a>
             {isActive && <div className='navbtn'>
-                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)' }}> About Us</a>
+                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> About Us</a>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Services</a>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Pathological Equipments</a>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Contact Us</a>
