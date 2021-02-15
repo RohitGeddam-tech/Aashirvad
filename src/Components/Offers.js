@@ -12,6 +12,14 @@ const Intro = () => {
   )
 }
 
+const Newintro = () =>{
+  return(
+    <div className='mobintr'>
+      <h2>Offers</h2>
+    </div>
+  )
+}
+
 const Offers = () => {
 
   const [isMobile, setMobile] = useState(
@@ -25,7 +33,7 @@ const Offers = () => {
 
   return (
     <div className='sizpage'>
-      {isMobile ? <Intro /> : <Intro />}
+      {isMobile ? <Newintro /> : <Intro />}
       {/* {isMobile ? <Mobile /> : <MultiCarouselPage />} */}
       <SlickSlide />
     </div>

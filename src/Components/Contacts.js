@@ -29,11 +29,10 @@ const Mobilefirst = () => {
     return (
         <div className='introduct'>
         <div className='head'>
-                <img src={line} alt='...' />
                 <>
                     <h2 className='atthemiddle'> Contact Us </h2>
                 </>
-                <img src={line} alt='...' />
+            
             </div>
             </div>
     )
@@ -67,7 +66,7 @@ const Mobsecond = () => {
             </div>
             <div className='contentmobsheet'>
                 <a href='tel:+912226711340' className='aspanmob'><span class="themobheader">+91 22 2671 1340</span></a>
-                <a href='mailto:contact@aashirwadlabs.com' className='amob'><span class="themobheader">contact@aashirwadlabs.com</span></a>
+                <a href='mailto:contact@aashirwadlabs.com' className='amob'><p class="themobheader">contact@aashirwadlabs.com</p></a>
                 <p class="themobheader">Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
             </div>
         </div>

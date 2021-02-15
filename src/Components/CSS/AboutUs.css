@@ -9,6 +9,10 @@
     margin: auto;
   }
 
+  .mobline{
+    margin-bottom: 5px;
+  }
+
   .imgbox{
     display: flex;
     align-items: center;
@@ -41,8 +45,11 @@
 
   .p{
     text-align: start;
-    font-size: 20px;
+    font-size: 18px;
     color: #7B7F8C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
   }
 
   .btnbox{
@@ -95,8 +102,11 @@
     width: 40%;
   }
 
+  .texttitlemob{
+    margin: auto;
+  }
+
   h3.mobh{
-    text-align: start;
     padding-top: 15px;
     font-size: 30px;
     margin-bottom: 30px;
@@ -104,13 +114,11 @@
 
   p.mobp{
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     color: grey;
+    font-style: normal;
+    font-weight: normal;
   }
-
-  .ui.button.mobbtnread{
-    color: white;
-}
 
   .hello{
     position: relative;

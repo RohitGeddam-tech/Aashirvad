@@ -41,8 +41,8 @@ const AboutUs = () => {
         <div className='firstus'>
             {isMobile ?
             <div className='Mobcontentbox'>
-            <div className='texttitle'>
-                <h3 className='mobh'>About us <img className='mobline' src={line} alt='...' /> </h3>
+            <div className='texttitlemob'>
+                <h3 className='mobh'>About us </h3>
             </div>
             <p className='mobp'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

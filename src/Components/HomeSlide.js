@@ -18,7 +18,7 @@ export default class SimpleSlider extends Component {
             <div className='mobdet'>
                 <h3 className='mobh'>Banner Title</h3>
                 <div className='mobdata'>
-                    <p className='lead mobp'>
+                    <p className='lead mobilep'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
@@ -31,7 +31,7 @@ export default class SimpleSlider extends Component {
             <div className='mobdet'>
                 <h3 className='mobh'>Banner Title</h3>
                 <div className='mobdata'>
-                    <p className='lead mobp'>
+                    <p className='lead mobilep'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
@@ -44,7 +44,7 @@ export default class SimpleSlider extends Component {
             <div className='mobdet'>
                 <h3 className='mobh'>Banner Title</h3>
                 <div className='mobdata'>
-                    <p className='lead mobp'>
+                    <p className='lead mobilep'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>

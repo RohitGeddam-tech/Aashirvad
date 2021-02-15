@@ -13,6 +13,8 @@
     margin-left: 50px;
 }
 
+
+
 .intr h2{
     margin-top: 30px;
     font-style: normal;
@@ -89,6 +91,22 @@ button.slick-prev:before{
 
 /*mob view starts*/
 
+.mobintr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobintr h2{
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #092F57;
+}
 
 /*mob view ends*/
 

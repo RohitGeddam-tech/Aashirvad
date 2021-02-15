@@ -30,27 +30,6 @@ const MobList = () => {
     )
 }
 
-const Mobile = () => {
-    return (
-        <Carousel className='homecarousel'>
-            <Carousel.Item className='itemsize'>
-            <div className='mobdet'>
-                <h3 className='mobh'>Banner Title</h3>
-                <div className='mobdata'>
-                    <p className='lead mobp'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
-                    </p>
-                    <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
-                    </div>
-                </div>
-            </div> 
-            </Carousel.Item>
-            
-        </Carousel>    
-    )
-}
-
 const Home = () => {
     const [isMobile, setMobile] = useState(
         window.matchMedia('(max-width:750px)').matches

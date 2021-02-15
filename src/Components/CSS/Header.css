@@ -41,8 +41,8 @@ header{
   }
 
 
+
   .ui.menu a.item{
-    text-transform: uppercase;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -55,6 +55,7 @@ header{
   .ui.button:hover{
     border: 1px solid  #0c4480;
     color:  #0c4480;
+    background-color: white !important;
   }
   /*mobile view starts*/
 
@@ -74,13 +75,13 @@ header{
 
 a.item.itemname{
   color: rgba(123, 127, 140, 0.5);
-  margin-top: 12px;
-  font-size: 15px;
-  text-transform: uppercase;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .itembtn{
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
   /*mobile view ends*/

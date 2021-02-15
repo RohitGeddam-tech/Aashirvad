@@ -23,6 +23,25 @@ const List = () => {
     )
 } 
 
+const Mobile = () => {
+    return(
+        <div className='intro'>
+            <div className='head'>
+                
+                <>
+                    <h2 className='inthemiddle'> Services </h2>
+                </>
+                
+            </div>
+            <div className='paracontainer' style={{marginTop: '20px'}}>
+                <p className='cent'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,.
+                </p>
+            </div>
+        </div>
+    )
+}
 
 const DeskList = () => {
     return (
@@ -115,7 +134,7 @@ const Services = () => {
 
     return (
         <div className='service'>
-            {isMobile ? <List /> : <List />}
+            {isMobile ? <Mobile /> : <List />}
             {isMobile ? <Moblist /> : <DeskList />}
         </div>
     )
