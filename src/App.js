@@ -13,11 +13,10 @@ const View = () => {
     <div className='App'>
       <Header />
       <Home />
-      
       <section>
       <AboutUs />
       </section>
-      <section className='sm'>
+      <section>
         <Services />
       </section>
       <section>

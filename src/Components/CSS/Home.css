@@ -36,8 +36,8 @@
     position: absolute;
     margin-top: 150px;
     margin-left: 70px;
-    height: 400px;
     width: 50%;
+    height: 52%;
     background: rgba(255, 255, 255, 0.8);
   }
 
@@ -75,8 +75,6 @@
     color: #fff;
     background: #0c4480;
   }
-
-  
 
   .mobdet{
     margin-left: 5%;

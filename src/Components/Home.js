@@ -6,7 +6,6 @@ import cover2 from './Photos/cover2.jpg';
 import Carousel from 'react-bootstrap/Carousel';
 import HomeSlide from "./HomeSlide";
 
-
 const List = () => {
     return (
         <div className='det'>

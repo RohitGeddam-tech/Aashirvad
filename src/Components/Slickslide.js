@@ -36,7 +36,8 @@ export default class Responsive extends Component {
             breakpoint: 560,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              arrows: false
             }
           }
         ]

@@ -4,7 +4,6 @@
 
 .msheet{
     width: 100%;
-    border: 2px solid green;
 }
 
 .introduct{
@@ -14,7 +13,6 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-end;
-    border: 2px solid green;
 }
 
 .head {
@@ -54,7 +52,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    border: 2px solid green;
     margin-bottom: 50px;
 }
 
@@ -63,7 +60,6 @@
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    border: 2px solid green;
 }
 
 .contentsheet{
@@ -72,7 +68,7 @@
     display: flex;
     align-items: inherit;
     justify-content: space-between;
-    border: 2px solid green;
+    margin-top: 15px;
 }
 
 .theheader{
@@ -97,9 +93,9 @@
     margin-top: 3%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    border: 2px solid green;
+    justify-content: space-around;
     margin-bottom: 15px;
+    width: 90%;
 }
 
 .imgmobsheet{
@@ -115,7 +111,6 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    border: 2px solid green;
 }
 
 .amob{
@@ -123,7 +118,7 @@
 }
 
 .aspanmob{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .sheetmobimg{
@@ -136,6 +131,7 @@
     text-align: start;
     color: #092F57;
     margin: auto;
+    margin-left: 0 !important;
 }
 
 /*mob view ends*/
