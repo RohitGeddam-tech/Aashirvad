@@ -1,7 +1,6 @@
 /*Service page starts*/
 
 .service{
-    height: 550px;
     width: 100%;
     background-color: #0c4480;
   }
@@ -48,7 +47,8 @@
     width: 90%;
     height: 50%;
     margin-left: 8%;
-    margin-top: 80px;
+    margin-top: 60px;
+    padding-bottom: 80px;
     overflow-x: hidden;
     box-sizing: border-box;
   }
