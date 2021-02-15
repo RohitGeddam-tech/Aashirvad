@@ -62,12 +62,12 @@ const Mobsecond = () => {
             <div className='imgmobsheet'>
                 <a href='tel:++912226711340'><img className='sheetmobimg' src={call} /></a>
                 <a href='mailto:webmaster@example.com'><img className='sheetmobimg' src={email} /></a>
-                <img className='sheetmobimg' src={location} />
+                <img className='sheetmobimg' src={location} style={{marginBottom:'40px'}}/>
             </div>
             <div className='contentmobsheet'>
                 <a href='tel:+912226711340' className='aspanmob'><span class="themobheader">+91 22 2671 1340</span></a>
                 <a href='mailto:contact@aashirwadlabs.com' className='amob'><p class="themobheader">contact@aashirwadlabs.com</p></a>
-                <p class="themobheader">Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
+                <p class="themobheader" style={{marginBottom:'38px'}}>Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
             </div>
         </div>
     )

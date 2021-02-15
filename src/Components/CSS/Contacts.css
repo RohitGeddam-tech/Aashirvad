@@ -93,7 +93,7 @@
 
 .mainmobsheet{
     height: 400px;
-    margin-top: 3%;
+    margin-top: 25px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -104,7 +104,7 @@
 .imgmobsheet{
     width: 25%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: column wrap;
 }
 
@@ -117,16 +117,17 @@
 }
 
 .amob{
-    margin-top: 120px;
+    margin-top: 130px;
 }
 
 .aspanmob{
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .sheetmobimg{
     width: 70px;
     height: 70px;
+    margin-left: 13px;
 }
 
 .themobheader{
