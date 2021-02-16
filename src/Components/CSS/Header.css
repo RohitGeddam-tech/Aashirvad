@@ -46,6 +46,7 @@ header{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    color: #7B7F8C;
   }
 
   .mobbtn{
@@ -74,10 +75,11 @@ header{
 }
 
 a.item.itemname{
-  color: rgba(123, 127, 140, 0.5);
+  color: #7B7F8C !important;
   margin-top: 25px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: 'Montserrat' !important;
 }
 
 .itembtn{

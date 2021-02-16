@@ -21,6 +21,12 @@
     font-style: bold;
     padding-top: 29px;
   }
+
+  .inthemiddle{
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+  }
   
   .head img{
     margin-top: 12px;

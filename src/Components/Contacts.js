@@ -44,12 +44,16 @@ const Desksecond = () => {
             <div className='imgsheet'>
                 <a href='tel:++912226711340'><img className='sheetimg' src={call} /></a>
                 <a href='mailto:webmaster@example.com'><img className='sheetimg' src={email} /></a>
-                <img className='sheetimg' src={location} />
+                <a href='https://goo.gl/maps/m8AC5t2PACm9azK48'><img className='sheetimg' src={location} /></a>
             </div>
             <div className='contentsheet'>
-                <a href='tel:++912226711340' className='theheader'><span class="theheader">+91 22 2671 1340</span></a>
-                <a href='mailto:contact@aashirwadlabs.com' className='theheader'><span class="theheader">contact@aashirwadlabs.com</span></a>
-                <p class="theheader">Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
+                <a href='tel:++912226711340' className='theheader'>+91 22 2671 1340</a>
+                <a href='mailto:contact@aashirwadlabs.com' className='theheader'>contact@aashirwadlabs.com</a>
+                <a href='https://goo.gl/maps/m8AC5t2PACm9azK48' className='theheader'>
+                   
+                    Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75
+                    
+                </a>
             </div>
         </div>
     )
@@ -61,13 +65,15 @@ const Mobsecond = () => {
         <div className='mainmobsheet'>
             <div className='imgmobsheet'>
                 <a href='tel:++912226711340'><img className='sheetmobimg' src={call} /></a>
-                <a href='mailto:webmaster@example.com'><img className='sheetmobimg' src={email} /></a>
-                <img className='sheetmobimg' src={location} style={{marginBottom:'50px'}}/>
+                <a style={{marginBottom:'20px'}} href='mailto:webmaster@example.com'><img className='sheetmobimg' src={email} /></a>
+                <a href='https://goo.gl/maps/m8AC5t2PACm9azK48'><img className='sheetmobimg' src={location}/></a>
             </div>
             <div className='contentmobsheet'>
-                <a href='tel:+912226711340' className='aspanmob'><span class="themobheader">+91 22 2671 1340</span></a>
-                <a href='mailto:contact@aashirwadlabs.com' className='amob'><p class="themobheader">contact@aashirwadlabs.com</p></a>
-                <p class="themobheader" style={{marginBottom:'35px'}}>Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
+                <a href='tel:+912226711340' className='themobheader'>+91 22 2671 1340</a>
+                <a href='mailto:contact@aashirwadlabs.com' className='themobheader'>contact@aashirwadlabs.com</a>
+                <a href='https://goo.gl/maps/m8AC5t2PACm9azK48' className="themobheader">
+                        Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75
+                </a>
             </div>
         </div>
     )

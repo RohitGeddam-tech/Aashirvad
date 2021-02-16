@@ -2,10 +2,11 @@
 /* 
 font-family: 'Montserrat', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

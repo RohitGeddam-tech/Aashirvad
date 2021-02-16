@@ -16,7 +16,7 @@ export default class Responsive extends Component {
         initialSlide: 0,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1050,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
