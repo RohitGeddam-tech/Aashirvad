@@ -97,7 +97,7 @@
 /*mob view starts*/
 
 .mainmobsheet{
-    height: 400px;
+    height: 350px;
     margin-top: 25px;
     display: flex;
     flex-flow: row wrap;
@@ -118,7 +118,7 @@
 }
 
 .contentmobsheet{
-    width: 79%;
+    width: 76%;
     height: 90%;
     display: flex;
     flex-flow: column wrap;

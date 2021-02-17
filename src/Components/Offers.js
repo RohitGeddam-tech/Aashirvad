@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './CSS/Offers.css';
 import line from './Photos/Line2.jpg';
 import SlickSlide from './Slickslide'; 
+import Mobslide from './Mobslide';
 
 const Intro = () => {
   return (
@@ -23,11 +24,11 @@ const Newintro = () =>{
 const Offers = () => {
 
   const [isMobile, setMobile] = useState(
-    window.matchMedia('(max-width:800px)').matches
+    window.matchMedia('(max-width:830px)').matches
   );
   useEffect(() => {
     window.addEventListener('resize', () => {
-      setMobile(window.matchMedia('(max-width:800px)').matches)
+      setMobile(window.matchMedia('(max-width:830px)').matches)
     })
   })
 
@@ -35,7 +36,7 @@ const Offers = () => {
     <div className='sizpage'>
       {isMobile ? <Newintro /> : <Intro />}
       {/* {isMobile ? <Mobile /> : <MultiCarouselPage />} */}
-      <SlickSlide />
+      {isMobile ? <Mobslide /> : <SlickSlide />}
     </div>
   )
 }
