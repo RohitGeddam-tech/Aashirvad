@@ -48,6 +48,14 @@ const MobileList =()=>{
     )
 }
 
+const Intro = () => {
+    return(
+        <div className='brand-name'>
+            <img src={logo}/>
+        </div>
+    )
+}
+
 const Header = () => {
     const[isMobile, setMobile] = useState(
         window.matchMedia('(max-width:770px)').matches
@@ -62,10 +70,9 @@ const Header = () => {
     return (
         <header>
             <nav className='navbar navbar-secondary' style={{width: '100%'}}>
-                <div className='brand-name'>
+                {isMobile ? <div className='Mobbrand-name'>
                     <img src={logo}/>
-                    {/* <a href='#'>AASHIRVAD <a className='a1' href='#'>LAB</a></a> */}
-                </div>
+                </div> : <Intro />}
                 {isMobile ? <MobileList /> : <List />}
             </nav>
         </header>
