@@ -23,24 +23,14 @@ header{
     background: #0c4480;
     text-transform: uppercase;
   }
-  
-  .brand-name a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #0c4480;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  
-  .brand-name .a1{
-    color: #119ef0;
-  }
+/*   
+  .brand-name{
+    height: 29px;
+  } */
 
   .ui.menu a.item:hover{
     color: #0c4480 !important;
   }
-
-
 
   .ui.menu a.item{
     font-style: normal;

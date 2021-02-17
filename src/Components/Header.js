@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './CSS/Header.css';
 import {BsX} from 'react-icons/bs';
+import logo from './Photos/logo.svg';
 
 const List = () => {
     return (
@@ -62,7 +63,8 @@ const Header = () => {
         <header>
             <nav className='navbar navbar-secondary' style={{width: '100%'}}>
                 <div className='brand-name'>
-                    <a href='#'>AASHIRVAD <a className='a1' href='#'>LAB</a></a>
+                    <img src={logo}/>
+                    {/* <a href='#'>AASHIRVAD <a className='a1' href='#'>LAB</a></a> */}
                 </div>
                 {isMobile ? <MobileList /> : <List />}
             </nav>
