@@ -1,20 +1,25 @@
 import React, {useEffect, useState} from 'react';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
-import FullPage from './FirstPage';
+import FirstPage from './FirstPage';
+import MiddlePage from './MiddlePage';
+import LastPage from './LastPage';
 
 const View =()=>{
     return(
         <div className='App'>
-            <Header />
-            <FullPage />
-            <section style={{height:'600px'}}>
-                middle section
+            <FirstPage />
+            <section>
+                <MiddlePage />
+            </section>
+            <section>
+                <LastPage />
             </section>
             <Footer />
         </div>
     )
 }
+
 
 const App=() => {
     const[isMobile, setMobile] = useState(

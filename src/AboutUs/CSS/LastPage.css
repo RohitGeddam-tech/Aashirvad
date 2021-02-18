@@ -1,0 +1,61 @@
+.LastPage{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.lastbox{
+    width: 100%;
+}
+
+.lastboxtitle{
+    text-align: start;
+    font-size: 30px;
+    color: #092F57;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Montserrat';
+    padding-top: 30px;
+    padding-left: 75px;
+}
+
+.lastbox1{
+    display: block;
+    width: 98%;
+    height: 50%;
+    margin-left: 10px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.lastimg{
+    width: 350px;
+    height: 275px;
+    margin-left: 70px;
+}
+
+.lastimage{
+    width: 285px;
+    height: 215px;
+    margin: auto;
+}
+
+.newboxtitle{
+    text-align: center;
+    font-size: 30px;
+    color: #092F57;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Montserrat';
+    padding-top: 20px;
+}
+
+.Slider{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}

@@ -11,7 +11,6 @@ import Footer from './Components/Footer';
 const View = () => {
   return(
     <div className='App'>
-      <Header />
       <Home />
       <section>
       <AboutUs />
