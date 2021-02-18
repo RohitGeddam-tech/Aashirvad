@@ -8,7 +8,7 @@ const View =()=>{
         <div className='App'>
             <Header />
             <FullPage />
-            <section>
+            <section style={{height:'600px'}}>
                 middle section
             </section>
             <Footer />

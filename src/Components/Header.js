@@ -58,11 +58,11 @@ const Intro = () => {
 
 const Header = () => {
     const[isMobile, setMobile] = useState(
-        window.matchMedia('(max-width:750px)').matches
+        window.matchMedia('(max-width:780px)').matches
     );
     useEffect(()=>{
         window.addEventListener('resize', ()=>{
-            setMobile(window.matchMedia('(max-width:750px)').matches)
+            setMobile(window.matchMedia('(max-width:780px)').matches)
         })
     })
 

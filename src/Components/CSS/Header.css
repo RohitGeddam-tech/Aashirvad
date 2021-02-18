@@ -15,6 +15,7 @@ header{
   
   .ui.secondary.menu{
     margin-right: 40px;
+    margin-left: 40px;
     margin-top: 0px !important;
   }
   
@@ -53,8 +54,8 @@ header{
 
   .Mobbrand-name{
     padding: 15px 15px;
-    margin-left: 20%;
-    width: auto;
+    padding-left: 25%;
+    width: 80%;
   }
 
 .navbtn{
