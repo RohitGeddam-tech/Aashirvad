@@ -78,6 +78,11 @@ a.item.itemname{
   font-family: 'Montserrat' !important;
 }
 
+a.item.itemname:hover{
+  color: #0c4480;
+  font-size: 20px;
+}
+
 .itembtn{
   margin-top: 25px;
 }

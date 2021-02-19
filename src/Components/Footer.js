@@ -33,8 +33,6 @@ const Mobile = () => {
                 <h3 className='titlenames'>About Us</h3>
                 <h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3>
                 <h3 className='titlenames'>CONTACT US</h3>
-                <h3 className='titlenames'>PRIVACY POLICY</h3>
-                <h3 className='titlenames'>TERMS & CONDITIONS</h3>
             </div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>

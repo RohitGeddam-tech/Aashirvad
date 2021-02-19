@@ -11,9 +11,9 @@ const Routing = () => {
             <div className='App'>
                 <Header />
                 <Switch>
-                    <Route path='/Aashirvad' component={App}/>
-                    <Route path='/About' component={FullPage}/>
-                    <Route path='/Contacts' component={Contacts}/>
+                    <Route path='/Aashirvad' exact component={App}/>
+                    <Route path='/Aashirvad/About' component={FullPage}/>
+                    <Route path='/Aashirvad/Contacts' component={Contacts}/>
                 </Switch>
             </div>
         </Router>

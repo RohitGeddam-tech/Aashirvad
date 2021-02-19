@@ -8,17 +8,17 @@ const List = () => {
     return (
             // <div style={style}>
                 <div class="ui secondary  menu">
-                    <Link style={{marginTop:'10px'}} to='/About'>
+                    <Link style={{marginTop:'10px'}} to='/Aashirvad/About'>
                     <a class="item itemname" style={{color: 'rgba(123, 127, 140, 0.5)'}}>
                         About Us
                     </a>
                     </Link>
-                    <Link style={{marginTop:'10px'}} to='/Pathology'>
+                    <Link style={{marginTop:'10px'}} to='/Aashirvad/Pathology'>
                     <a class="item itemname" style={{color: 'rgba(123, 127, 140, 0.5)'}}>
                         Pathological Equipments
                     </a>
                     </Link>
-                    <Link style={{marginTop:'10px'}} to='/Contacts'>
+                    <Link style={{marginTop:'10px'}} to='/Aashirvad/Contacts'>
                     <a class="item itemname" style={{color: 'rgba(123, 127, 140, 0.5)'}}>
                         Contact Us
                     </a>
@@ -46,17 +46,17 @@ const MobileList =()=>{
                 {isActive ? <BsX size='35px'/> : <i className='large bars icon'></i>}
             </a>
             {isActive && <div className='navbtn'>
-                <Link to='./About' style={{marginTop: '25px'}}>
+                <Link to='/Aashirvad/About' style={{marginTop: '25px'}}>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> About Us</a>
                 </Link>
-                <Link style={{marginTop: '25px'}} to='./Pathology'>
+                <Link style={{marginTop: '25px'}} to='/Aashirvad/Pathology'>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Pathological Equipments</a>
                 </Link>
-                <Link style={{marginTop: '25px'}} to='./Contacts'>
+                <Link style={{marginTop: '25px'}} to='/Aashirvad/Contacts'>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Contact Us</a>
                 </Link>
                 <div class="itembtn">
-                <Link style={{marginTop: '25px'}} to='./About'>
+                <Link style={{marginTop: '25px'}} to='/Aashirvad/About'>
                     <a class="ui button">BOOK AN APPOINTMENT</a>
                 </Link>
                 </div>
@@ -87,7 +87,7 @@ const Header = () => {
         <header>
             <nav className='navbar navbar-secondary' style={{width: '100%'}}>
                 {isMobile ? <div className='Mobbrand-name'>
-                    <img src={logo}/>
+                <Link to='/Aashirvad'><img src={logo}/></Link>
                 </div> : <Intro />}
                 {isMobile ? <MobileList /> : <List />}
             </nav>
