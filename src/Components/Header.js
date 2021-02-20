@@ -31,10 +31,12 @@ const List = () => {
                 </button>
                 <Modal className='modal' isOpen={isModal}>
                     <div className='popup'>
-                        <div>
+                        <div className='topline'>
                             <img src={logo} />
-                            <BsX size='35px' onClick={() => { setModal(false) }} />
+                            <BsX size='35px' onClick={() => { setModal(false) }} style={{cursor:'pointer', marginLeft:'40px'}} />
                         </div>
+                        <h2>Book an appointment</h2>
+                        <p>by filling in your details </p>
                         <form>
                             <input type='name' placeholder='Enter Your Name' />
                             <input type='email' placeholder='Enter Your Email' />
@@ -44,7 +46,11 @@ const List = () => {
                                 <option>Blue</option>
                                 <option>Bank</option>
                             </select>
+                            <input />
+                            <button type='submit' className='ui button newbtn'>Submit</button>
                         </form>
+                        <h3>OR</h3>
+                        <h5 className='ptag'>Call Us at :<a href='tel:+919876509876' className='popupa'>+91 98765 09876</a></h5>
                     </div>
                 </Modal>
             </div>
