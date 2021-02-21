@@ -108,8 +108,8 @@ a.item.itemname:hover{
 }
 
 .popup{
-  width: 350px;
-  height: 550px;
+  width: 25%;
+  height: 70%;
   display: flex;
   flex-flow: column;
   background: white;
