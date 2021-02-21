@@ -4,9 +4,13 @@ import { BsX } from 'react-icons/bs';
 import logo from './Photos/logo.svg';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
+import useForm from './useForm';
+import { validateYupSchema } from 'formik';
+import validate from './ValidateInfo';
 
 const List = () => {
     const [isModal, setModal] = useState(false);
+    const {handleChange, values, handleSubmit, errors} = useForm(validate);
     return (
         // <div style={style}>
         <div class="ui secondary  menu">
@@ -37,12 +41,34 @@ const List = () => {
                         </div>
                         <h2>Book an appointment</h2>
                         <p>by filling in your details </p>
-                        <form>
-                            <input type='name' placeholder='Enter Your Name' />
-                            <input type='email' placeholder='Enter Your Email' />
-                            <input type='tel' placeholder='Enter Your Mobile No.' />
+                        <form onSubmit={handleSubmit}>
+                            <input 
+                                type='name' 
+                                name='name' 
+                                placeholder='Enter Your Name' 
+                                value={values.name}
+                                onChange={handleChange}
+                            />
+                            {errors.name && <h4 className='errorp'>{errors.name}</h4>}
+                            <input 
+                                type='email' 
+                                name='email' 
+                                placeholder='Enter Your Email' 
+                                value={values.email}
+                                onChange={handleChange}
+                            />
+                            {errors.email && <h4 className='errorp'>{errors.email}</h4>}
+                            <input 
+                                type='tel' 
+                                name='mobile' 
+                                placeholder='Enter Your Mobile No.'
+                                value={values.mobile} 
+                                onChange={handleChange}
+                                pattern='[0-9]{10}'
+                            />
+                            {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>}
                             <select>
-                                <option>Books</option>
+                                <option>Test & Packages</option>
                                 <option>Blue</option>
                                 <option>Bank</option>
                             </select>
@@ -82,9 +108,9 @@ const MobileList = () => {
                     <a className='item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</a>
                 </Link>
                 <div class="itembtn">
-                    {/* <Link style={{marginTop: '25px'}} to='/Aashirvad/Form'> */}
+                    <Link style={{marginTop: '25px'}} to='/Aashirvad/Form'>
                     <button class="ui button">BOOK AN APPOINTMENT</button>
-                    {/* </Link> */}
+                    </Link>
                 </div>
             </div>}
         </>

@@ -4,6 +4,7 @@ import App from '../App';
 import FullPage from '../AboutUs/FullPage';
 import Contacts from './Contacts';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Form from './Form';
 
 const Routing = () => {
     return(
@@ -14,6 +15,7 @@ const Routing = () => {
                     <Route path='/Aashirvad' exact component={App}/>
                     <Route path='/Aashirvad/About' component={FullPage}/>
                     <Route path='/Aashirvad/Contacts' component={Contacts}/>
+                    <Route path='/Aashirvad/Form' component={Form}/>
                 </Switch>
             </div>
         </Router>
