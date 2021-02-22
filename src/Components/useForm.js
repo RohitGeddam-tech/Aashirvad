@@ -4,9 +4,12 @@ const useForm = (validate) => {
     const [values, setValues] = useState({
         name:'',
         email:'',
-        mobile:''
+        mobile:'',
+        option: '',
+        textField: ''
     })
     const [errors, setErrors] = useState({})
+    // const [isSubmit, setIsSubmit] = useState(false);
 
     const handleChange = e => {
         const {name, value} = e.target;
@@ -20,7 +23,17 @@ const useForm = (validate) => {
     const handleSubmit = e => {
         e.preventDefault();
 
-        setErrors(validate(values))
+        setErrors(validate(values));
+        if(errors===''){
+            alert('Your Form is Submitted');
+        } else if(!errors){
+            alert('your form is not submitted')
+        }
+
+        alert('form submitted')
+        console.log('form values', values)
+        // setIsSubmit(true);
+        
     }
 
     return {handleChange, values, handleSubmit, errors}
