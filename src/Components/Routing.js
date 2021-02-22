@@ -5,6 +5,7 @@ import FullPage from '../AboutUs/FullPage';
 import Contacts from './Contacts';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Form from './Form';
+import NewForm from '../Form/NewForm';
 
 const Routing = () => {
     const [isMobile, setMobile] = useState(
@@ -24,7 +25,7 @@ const Routing = () => {
                     <Route path='/Aashirvad' exact component={App}/>
                     <Route path='/Aashirvad/About' component={FullPage}/>
                     <Route path='/Aashirvad/Contacts' component={Contacts}/>
-                    <Route path='/Aashirvad/Form' component={Form}/>
+                    <Route path='/Aashirvad/Form' component={NewForm}/>
                 </Switch>
             </div>
         </Router>}
