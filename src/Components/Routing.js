@@ -25,7 +25,7 @@ const Routing = () => {
                     <Route path='/Aashirvad' exact component={App}/>
                     <Route path='/Aashirvad/About' component={FullPage}/>
                     <Route path='/Aashirvad/Contacts' component={Contacts}/>
-                    <Route path='/Aashirvad/Form' component={NewForm}/>
+                    <Route path='/Aashirvad/Form' component={Form}/>
                 </Switch>
             </div>
         </Router>}
