@@ -93,9 +93,6 @@ a.item.itemname:hover{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
   background: rgba(0,0,0,0.5);
 }
 
@@ -103,17 +100,17 @@ a.item.itemname:hover{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .popup{
-  width: 25%;
-  height: 70%;
+  width: 350px;
+  height: 550px;
   display: flex;
   flex-flow: column;
   background: white;
   border-radius: 5px;
+  margin: auto;
+  margin-top: 130px;
 }
 
 .popup img{
@@ -148,7 +145,7 @@ color: #989CAC;
 .popup form{
   width: 300px;
   height: 300px;
-  margin-left: 25px;
+  margin-left: 22px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -192,6 +189,7 @@ color: #989CAC;
   text-align: center;
   font-weight: 400;
   font-family: 'Montserrat';
+  padding-top: 9px !important;
 }
 
 .popup h3{
