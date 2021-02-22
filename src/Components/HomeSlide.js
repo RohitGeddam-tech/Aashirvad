@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 
 export default class SimpleSlider extends Component {
   render() {
@@ -23,7 +24,11 @@ export default class SimpleSlider extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
+                      <Link to='/Aashirvad/Form'> 
+                        <button class="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> 
                     </div>
                 </div>
             </div> 
@@ -36,7 +41,11 @@ export default class SimpleSlider extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
+                    <Link to='/Aashirvad/Form'> 
+                        <button class="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> 
                     </div>
                 </div>
             </div> 
@@ -49,7 +58,11 @@ export default class SimpleSlider extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
+                    <Link to='/Aashirvad/Form'> 
+                        <button class="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> 
                     </div>
                 </div>
             </div> 

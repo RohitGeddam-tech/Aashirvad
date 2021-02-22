@@ -104,6 +104,7 @@ a.item.itemname:hover{
 
 .popup{
   width: 350px;
+  height: 570px;
   display: flex;
   flex-flow: column;
   background: white;
@@ -112,13 +113,6 @@ a.item.itemname:hover{
   margin-top: 130px;
 }
 
-.popup img{
-  margin-left: 75px;
-}
-
-.topline{
-  margin-top: 10px;
-}
 
 .popup h2{
   color: #0c4480;

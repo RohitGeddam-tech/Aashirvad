@@ -2,6 +2,7 @@ import './CSS/AboutUs.css';
 import React, { useState, useEffect } from 'react';
 import line from './Photos/Line2.jpg';
 import scrn from './Photos/offers.jpg';
+import {Link} from 'react-router-dom';
 
 const List = () => {
     return (
@@ -21,7 +22,9 @@ const MobList = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className='btnbox'>
-                <a className='ui button btnread'>Read More</a>
+                <Link to='/Aashirvad/About'>
+                    <button className='ui button btnread'>Read More</button>
+                </Link>
             </div>
         </div>
     )
@@ -48,7 +51,9 @@ const AboutUs = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className='mobbtnbox'>
-                <a className='ui button mobbtnread'>Read More</a>
+                <Link to='/Aashirvad/About'>
+                    <button className='ui button mobbtnread'>Read More</button>
+                </Link>
             </div>
             <div className='mobimgbox'>
             <img className='mobboximg' src={scrn} alt='...'/>

@@ -12,6 +12,15 @@ import TextField from '@material-ui/core/TextField';
 // ReactModal.setAppElement('#main');
 
 const List = () => {
+    const [isMobile, setMobile] = useState(
+        window.matchMedia('(max-height:570px)').matches
+    );
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setMobile(window.matchMedia('(max-height:570px)').matches)
+        })
+    })
+
     const [isModal, setModal] = useState(false);
 
     const handleOpen = () => {
@@ -41,12 +50,16 @@ const List = () => {
                     Contact Us
                     </a>
             </Link>
-            <div class="item mobbtn">
-                <button class="ui button" onClick={handleOpen}>
+            
+                { isMobile ? <div class="item mobbtn"> <Link to='/Aashirvad/Form'> <button class="ui button">
                     BOOK AN APPOINTMENT
-                </button>
-                <Modal className='modal' open={isModal} onClose={handleClose}>
-                    <div className='popup'>
+                </button> </Link> </div> : 
+                    <div class="item mobbtn"> 
+                    <button class="ui button" onClick={handleOpen}>
+                        BOOK AN APPOINTMENT
+                    </button>
+                    <Modal className='modal' open={isModal} onClose={handleClose}>
+                        <div className='popup'>
                         
                         <h2>Book an appointment</h2>
                         <p>by filling in your details </p>
@@ -59,7 +72,7 @@ const List = () => {
                                 onChange={handleChange}
                                 required
                             />
-                            {/* {errors.name && <h4 className='errorp'>{errors.name}</h4>} */}
+                             {/* {errors.name && <h4 className='errorp'>{errors.name}</h4>}  */}
                             <input
                                 type='email'
                                 name='email'
@@ -68,7 +81,7 @@ const List = () => {
                                 onChange={handleChange}
                                 required
                             />
-                            {/* {errors.email && <h4 className='errorp'>{errors.email}</h4>} */}
+                             {/* {errors.email && <h4 className='errorp'>{errors.email}</h4>}  */}
                             <input
                                 type='tel'
                                 name='mobile'
@@ -78,7 +91,7 @@ const List = () => {
                                 pattern='[0-9]{10}'
                                 required
                             />
-                            {/* {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>} */}
+                             {/* {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>}  */}
                             <select name='select' value={values.select} required>
                                 <option name='option' value={values.option}>Test & Packages</option>
                                 <option name='option' value={values.option}>Blue</option>
@@ -100,13 +113,17 @@ const List = () => {
                         </form>
                         <h3>OR</h3>
                         <h5 className='ptag'>Call Us at :<a href='tel:+919876509876' className='popupa'>+91 98765 09876</a></h5>
-                    </div>
-                </Modal>
-            </div>
+                        </div>
+                    </Modal>
+                </div>
+                }
+        
         </div>
-        // </div>
     )
 }
+
+
+/*  */
 
 const MobileList = () => {
     const [isActive, setActive] = useState(false);

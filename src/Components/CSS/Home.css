@@ -84,6 +84,7 @@
   .mobdet{
     margin-left: 5%;
     margin-top: 5%;
+    margin-bottom:15px;
     height: 400px;
     width: 90%;
     background: rgba(255, 255, 255, 0.8);
@@ -124,6 +125,7 @@
 
   .item.mobbutton{
     margin-top: 5%;
+    margin-bottom: 5px;
   }
 
   

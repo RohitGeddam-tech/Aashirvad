@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import scrn from './Photos/offers2.jpg';
+import {Link} from 'react-router-dom';
 
 
 export default class Responsive extends Component {
@@ -43,7 +44,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    <Link to='/Aashirvad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link>
                 </div>
             </div>
             <div>
@@ -52,7 +55,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    <Link to='/Aashirvad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link>
                 </div>
             </div>
             <div>
@@ -61,7 +66,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    <Link to='/Aashirvad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link>
                 </div>
             </div>
             <div>
@@ -70,7 +77,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    <Link to='/Aashirvad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link>
                 </div>
             </div>
             <div>
@@ -79,7 +88,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    <Link to='/Aashirvad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link>
                 </div>
             </div>
           </Slider>
