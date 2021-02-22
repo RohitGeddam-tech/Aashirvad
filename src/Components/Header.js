@@ -31,11 +31,11 @@ const List = () => {
                     Pathological Equipments
                     </a>
             </Link>
-            <Link style={{ marginTop: '10px' }} to='/Aashirvad/Contacts'>
-                <a class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+            {/* <Link style={{ marginTop: '10px' }} to='/Aashirvad/Contacts'> */}
+                <a href='#msheet' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     Contact Us
-                    </a>
-            </Link>
+                </a>
+            {/* </Link> */}
             
                 { isMobile ? <div class="item mobbtn"> <Link to='/Aashirvad/Form'> <button class="ui button">
                     BOOK AN APPOINTMENT
@@ -69,9 +69,12 @@ const MobileList = () => {
                 <Link style={{ marginTop: '25px' }} to='/Aashirvad/Pathology'>
                     <a onClick={()=>{setActive(!isActive)}} className='item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Pathological Equipments</a>
                 </Link>
-                <Link style={{ marginTop: '25px' }} to='/Aashirvad/Contacts'>
+                {/* <Link style={{ marginTop: '25px' }} to='/Aashirvad/Contacts'>
                     <a onClick={()=>{setActive(!isActive)}} className='item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</a>
-                </Link>
+                </Link> */}
+                <a href='#msheet' onClick={()=>{setActive(!isActive)}} class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+                    Contact Us
+                </a>
                 <div class="itembtn">
                     <Link style={{ marginTop: '25px' }} to='/Aashirvad/Form'>
                         <button onClick={()=>{setActive(!isActive)}} class="ui button">BOOK AN APPOINTMENT</button>

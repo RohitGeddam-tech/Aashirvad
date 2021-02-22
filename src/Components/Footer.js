@@ -8,7 +8,8 @@ const Desktop = () => {
             <div className='firstrectangle'>
                 <Link to='/Aashirvad/About'><h3 className='titlenames'>About Us</h3></Link>
                 <Link to='/Aashirvad/About'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></Link>
-                <Link to='/Aashirvad/About'><h3 className='titlenames'>CONTACT US</h3></Link>
+                {/* <Link to='/Aashirvad/About'><h3 className='titlenames'>CONTACT US</h3></Link> */}
+                <a href='#msheet' className='titlenames'>CONTACT US</a>
                 <Link to='/Aashirvad/About'><h3 className='titlenames'>PRIVACY POLICY</h3></Link>
                 <Link to='/Aashirvad/About'><h3 className='titlenames'>TERMS & CONDITIONS</h3></Link>
             </div>
@@ -32,8 +33,12 @@ const Mobile = () => {
         <div className='insidefooter'>
             <div className='firstmobrectangle'>
             <Link to='/Aashirvad/About'><h3 className='titlenames'>About Us</h3></Link>
-            <Link to='/Aashirvad/About'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></Link>
-            <Link to='/Aashirvad/About'><h3 className='titlenames'>CONTACT US</h3></Link>
+            {/* <Link to='/Aashirvad/About'> */}
+                <a href='#msheet' className='titlenames'>PATHOLOGICAL EQUIPMENTS</a>
+            {/* </Link> */}
+            {/* <Link to='/Aashirvad/About'> */}
+                <a href='#msheet' className='titlenames'>CONTACT US</a>
+                {/* </Link> */}
             </div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>

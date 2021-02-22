@@ -18,7 +18,7 @@ const Routing = () => {
     })
 
     return(<div>
-        {isMobile ? <>hello</> : <Router>
+        {isMobile ? <>Your device is not compatible to use this website.</> : <Router>
             <div className='App'>
                 <Header />
                 <Switch>
