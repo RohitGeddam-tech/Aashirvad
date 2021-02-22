@@ -104,7 +104,6 @@ a.item.itemname:hover{
 
 .popup{
   width: 350px;
-  height: 550px;
   display: flex;
   flex-flow: column;
   background: white;
@@ -144,7 +143,6 @@ color: #989CAC;
 
 .popup form{
   width: 300px;
-  height: 300px;
   margin-left: 22px;
   display: flex;
   flex-flow: column;
@@ -157,9 +155,12 @@ color: #989CAC;
   width: 290px;
   font-size: 14px;
   color: #979797;  
-  border: 0.2px solid #979797;
+  border: 0.2px solid #979797 !important;
   border-radius: 2px;
   box-sizing: border-box;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  padding-left: 5px;
 }
 
 .errorp{
@@ -178,10 +179,15 @@ color: #989CAC;
   font-size: 14px;
   color: #979797;
   box-sizing: border-box; 
+  padding-left: 5px;
+  font-weight: 400;
+  font-family: 'Montserrat';
 }
 
 .popup option{
   width: 290px;
+  padding-left: 5px;
+  margin-top: 5px;
 }
 
 .ui.button.newbtn{
@@ -189,7 +195,7 @@ color: #989CAC;
   text-align: center;
   font-weight: 400;
   font-family: 'Montserrat';
-  padding-top: 9px !important;
+  padding-top: 10.5px !important;
 }
 
 .popup h3{
@@ -202,6 +208,7 @@ color: #989CAC;
 
 .ptag{
   color: #0c4480;
+  padding-bottom: 20px;
 }
 
 .popupa{
