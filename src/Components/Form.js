@@ -8,9 +8,6 @@ const Form = () => {
     return (
         <div className='form'>
             <div className='popup'>
-                <div className='topline'>
-                    <img src={logo} />
-                </div>
                 <h2>Book an appointment</h2>
                 <p>by filling in your details </p>
                 <form onSubmit={handleSubmit}>
