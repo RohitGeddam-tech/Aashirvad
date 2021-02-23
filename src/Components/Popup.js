@@ -56,10 +56,15 @@ const Popup = () => {
                                 required
                             />
                              {/* {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>}  */}
-                            <select name='select' value={values.select} required>
+                            {/* <select name='select' value={values.select} required>
                                 <option name='option' value={values.option}>Test & Packages</option>
                                 <option name='option' value={values.option}>Blue</option>
                                 <option name='option' value={values.option}>Bank</option>
+                            </select> */}
+                            <select required>
+                                <option value=''>Test & Packages</option>
+                                <option value='Blue'>Blue</option>
+                                <option value='Bank'>Bank</option>
                             </select>
                             <TextField
                                 id="datetime-local"

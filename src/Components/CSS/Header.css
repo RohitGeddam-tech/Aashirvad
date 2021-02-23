@@ -19,10 +19,9 @@ header{
     margin-top: 0px !important;
   }
   
-  
   .ui.button{
     color: #fff;
-    background: #0c4480;
+    background: #092F57;
     text-transform: uppercase;
     font-weight: 400;
   font-family: 'Montserrat';
@@ -33,7 +32,7 @@ header{
   } */
 
   .ui.menu a.item:hover{
-    color: #0c4480 !important;
+    color: #092F57 !important;
   }
 
   .ui.menu a.item{
@@ -48,8 +47,8 @@ header{
   }
 
   .ui.button:hover{
-    border: 1px solid  #0c4480;
-    color:  #0c4480;
+    border: 1px solid  #092F57;
+    color:  #092F57;
     background-color: white !important;
   }
   /*mobile view starts*/
@@ -81,8 +80,7 @@ a.item.itemname{
 }
 
 a.item.itemname:hover{
-  color: #0c4480;
-  font-size: 20px;
+  color: #092F57;
 }
 
 .itembtn{
@@ -114,7 +112,7 @@ a.item.itemname:hover{
 }
 
 .popup h2{
-  color: #0c4480;
+  color: #092F57;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Montserrat';
@@ -215,12 +213,12 @@ color: #989CAC;
 }
 
 .ptag{
-  color: #0c4480;
+  color: #092F57;
   padding-bottom: 20px;
 }
 
 .popupa{
-  color: #0c4480;
+  color: #092F57;
 }
 
 .popupa:hover{

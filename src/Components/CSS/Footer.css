@@ -26,7 +26,7 @@
 
 .titlenames{
     font-style: normal;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -55,9 +55,9 @@ a.titlenames:hover{
 }
 
 .midline{
-    border: 0.2px solid #092F57;
+    border: 0.1px solid #092F57;
     width: 100%;
-    height: 0.3px;
+    height: 0.1px;
 }
 
 .secondrectangle{

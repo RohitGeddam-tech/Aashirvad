@@ -6,7 +6,6 @@ const useForm = (validate) => {
         email:'',
         mobile:'',
         select: '',
-        option: '',
         textField: ''
     })
     const [errors, setErrors] = useState({})

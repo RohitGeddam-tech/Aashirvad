@@ -26,18 +26,18 @@ const List = () => {
     return (
         // <div style={style}>
         <div class="ui secondary  menu">
-            {/* <Link style={{ marginTop: '8px' }} to='/Aashirvad/About'> */}
+            <Link style={{ marginTop: '10px' }} to='/Aashirvad/About'>
                 <a href='/Aashirvad/About' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     About Us
                     </a>
-            {/* </Link> */}
-            {/* <Link style={{ marginTop: '8px' }} to='/Aashirvad/Pathology'> */}
+            </Link>
+            <Link style={{ marginTop: '10px' }} to='/Aashirvad/Pathology'>
                 <a href='/Aashirvad/Pathology' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     Pathological Equipments
                     </a>
-            {/* </Link> */}
+            </Link>
             {/* <Link style={{ marginTop: '10px' }} to='/Aashirvad/Contacts'> */}
-                <a href='#msheet' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+                <a href='#msheet' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)', marginTop: '3.5px' }}>
                     Contact Us
                 </a>
             {/* </Link> */}
@@ -51,9 +51,6 @@ const List = () => {
         </div>
     )
 }
-
-
-/*  */
 
 const MobileList = () => {
     const [isActive, setActive] = useState(false);
@@ -97,27 +94,6 @@ const Intro = () => {
         </div>
     )
 }
-
-// const Popup = () => {
-//     return (
-//         <div className='popup'>
-//             <div>
-//                 <img src={logo} />
-//                 <BsX size='35px'/>
-//             </div>
-//             <form>
-//                 <input type='name' placeholder='Enter Your Name' />
-//                 <input type='email' placeholder='Enter Your Email' />
-//                 <input type='tel' placeholder='Enter Your Mobile No.' />
-//                 <select>
-//                     <option>Books</option>
-//                     <option>Blue</option>
-//                     <option>Bank</option>
-//                 </select>
-//             </form>
-//         </div>
-//     )
-// }
 
 const Header = () => {
     const [isMobile, setMobile] = useState(

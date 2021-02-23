@@ -4,6 +4,7 @@ import validate from './ValidateInfo';
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
 
+
 const Popup = () => {
     const [isModal, setModal] = useState(false);
 
