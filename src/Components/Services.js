@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './CSS/Services.css';
 import line from './Photos/Line3.jpg';
 import heart from './Photos/heart1.jpg';
+import ServiceSlider from './ServiceSlider';
+import ServiceMob from './ServiceMobSlider';
 
 const List = () => {
     return(
@@ -124,18 +126,18 @@ const Moblist = () => {
 const Services = () => {
 
     const[isMobile, setMobile] = useState(
-        window.matchMedia('(max-width:750px)').matches
+        window.matchMedia('(max-width:770px)').matches
     );
     useEffect(()=>{
         window.addEventListener('resize', ()=>{
-            setMobile(window.matchMedia('(max-width:750px)').matches)
+            setMobile(window.matchMedia('(max-width:770px)').matches)
         })
     })
 
     return (
         <div className='service'>
             {isMobile ? <Mobile /> : <List />}
-            {isMobile ? <Moblist /> : <DeskList />}
+            {isMobile ? <ServiceMob /> : <ServiceSlider />}
         </div>
     )
 }

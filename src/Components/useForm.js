@@ -5,6 +5,7 @@ const useForm = (validate) => {
         name:'',
         email:'',
         mobile:'',
+        select: '',
         option: '',
         textField: ''
     })

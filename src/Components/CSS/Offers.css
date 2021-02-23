@@ -52,7 +52,6 @@ button.slick-prev:before{
     color: black;
 }
 
-
 .deskoffersmobpic img{
     width: 226.2px;
     height: 170px;
@@ -60,7 +59,7 @@ button.slick-prev:before{
 
 .deskoffersmobpic p{
     font-size: 14px;
-    width:auto;
+    width:190px;
     margin-left: 10px;
 }
 

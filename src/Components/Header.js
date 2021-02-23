@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 import Popup from './Popup'
 
 // ReactModal.setAppElement('#main');
+// const Contact = () => {
+//     if(Link != (to='/Aashirvad')){
+//     alert('this funtions only on the homepage so plase go to the homepage.')
+//     }
+// }
 
 const List = () => {
     const [isMobile, setMobile] = useState(
@@ -21,16 +26,16 @@ const List = () => {
     return (
         // <div style={style}>
         <div class="ui secondary  menu">
-            <Link style={{ marginTop: '10px' }} to='/Aashirvad/About'>
-                <a class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+            {/* <Link style={{ marginTop: '8px' }} to='/Aashirvad/About'> */}
+                <a href='/Aashirvad/About' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     About Us
                     </a>
-            </Link>
-            <Link style={{ marginTop: '10px' }} to='/Aashirvad/Pathology'>
-                <a class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+            {/* </Link> */}
+            {/* <Link style={{ marginTop: '8px' }} to='/Aashirvad/Pathology'> */}
+                <a href='/Aashirvad/Pathology' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     Pathological Equipments
                     </a>
-            </Link>
+            {/* </Link> */}
             {/* <Link style={{ marginTop: '10px' }} to='/Aashirvad/Contacts'> */}
                 <a href='#msheet' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     Contact Us

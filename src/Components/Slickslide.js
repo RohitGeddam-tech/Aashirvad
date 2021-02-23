@@ -4,9 +4,18 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import scrn from './Photos/offers2.jpg';
 import {Link} from 'react-router-dom';
+import SliderPopup from './SliderPopup'
 
 
 export default class Responsive extends Component {
+
+  state={Mobile: window.matchMedia('(max-height:570px)').matches};
+  componentDidMount(){
+    window.addEventListener('resize', () => {
+      this.setState({Mobile: window.matchMedia('(max-height:570px)').matches})
+    })
+  }
+
     render() {
       var settings = {
         dots: true,
@@ -17,7 +26,7 @@ export default class Responsive extends Component {
         initialSlide: 0,
         responsive: [
           {
-            breakpoint: 1050,
+            breakpoint: 1150,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
@@ -26,7 +35,7 @@ export default class Responsive extends Component {
             }
           },
           {
-            breakpoint: 784,
+            breakpoint: 860,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -52,9 +61,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <Link to='/Aashirvad/Form'>
+                    {this.state.Mobile ? <Link to='/Aashirvad/Form'>
                       <button className='ui button btnrea'>Book Now</button>
-                    </Link>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -63,9 +72,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <Link to='/Aashirvad/Form'>
+                    {this.state.Mobile ? <Link to='/Aashirvad/Form'>
                       <button className='ui button btnrea'>Book Now</button>
-                    </Link>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -74,9 +83,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <Link to='/Aashirvad/Form'>
+                    {this.state.Mobile ? <Link to='/Aashirvad/Form'>
                       <button className='ui button btnrea'>Book Now</button>
-                    </Link>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div className='lastboxslick'>
@@ -85,9 +94,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <Link to='/Aashirvad/Form'>
+                    {this.state.Mobile ? <Link to='/Aashirvad/Form'>
                       <button className='ui button btnrea'>Book Now</button>
-                    </Link>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div className='lastboxslick'>
@@ -96,9 +105,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <Link to='/Aashirvad/Form'>
+                    {this.state.Mobile ? <Link to='/Aashirvad/Form'>
                       <button className='ui button btnrea'>Book Now</button>
-                    </Link>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
           </Slider>

@@ -82,11 +82,11 @@ const Mobsecond = () => {
 const Contacts = () => {
 
     const[isMobile, setMobile] = useState(
-        window.matchMedia('(max-width:750px)').matches
+        window.matchMedia('(max-width:800px)').matches
     );
     useEffect(()=>{
         window.addEventListener('resize', ()=>{
-            setMobile(window.matchMedia('(max-width:750px)').matches)
+            setMobile(window.matchMedia('(max-width:800px)').matches)
         })
     })
 

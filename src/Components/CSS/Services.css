@@ -80,7 +80,106 @@
     height: 215px;
     border: 2px solid white;
   }
+
+  .boxslide{
+    padding-top: 40px;
+    width: 85%;
+    margin: auto;
+    padding-left: 50px;
+    padding-bottom: 60px;
+  }
+
+  .innerslide{
+    width: 235px !important;
+  }
+
+  .picslide{
+    width: 215px;
+    height: 215px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+  .boxslide .slick-track{
+    margin-bottom: 20px !important;
+  }
+
+  /* .boxslide ul.slick-dots button{
+    background-color:  #FFFFFF !important;
+  } */
+
+  .boxslide .slick-dots li.slick-active button:before{
+    color: #ffffff !important;
+    opacity: 2;
+  }
+
+  .boxslide .slick-dots{
+    padding-right: 40px;
+  }
+
+  .picslide img{
+    height: 110px;
+    width: 110px;
+    margin: auto;
+  }
+
+  .picslide h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170.6%;
+    text-align: center;
+  }
+
+  .mobboxslide{
+    padding-top: 40px;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 60px;
+  }
   
+  .mobpicslide{
+    width: 215px;
+    height: 215px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+  .mobpicslide img{
+    height: 110px;
+    width: 110px;
+    margin: auto;
+  }
+
+  .mobpicslide h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170.6%;
+    text-align: center;
+  }
+
+  .mobboxslide .slick-dots li.slick-active button:before{
+    color: #ffffff !important;
+    opacity: 2;
+  }
+
+  .mobboxslide .slick-track{
+    margin-bottom: 10px !important;
+  }
+
   .pic h2{
     height: 10px;
     width: 110px;
@@ -96,7 +195,7 @@
   .pic h3{
     color: white;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
