@@ -190,6 +190,7 @@ color: #989CAC;
   font-family: 'Montserrat';
   padding-top: 11px !important;
   padding-bottom: 10px !important;
+  transition: all 1s ease;
 }
 
 .ui.button.cancelbtn:hover{

@@ -23,6 +23,7 @@ const Routing = () => {
             <div className='App'>
                 <Header />
                 <Switch>
+                    <Route path='/' exact component={App}/>
                     <Route path='/Aashirvad' exact component={App}/>
                     <Route path='/Aashirvad/About' component={FullPage}/>
                     <Route path='/Aashirvad/Contacts' component={Contacts}/>

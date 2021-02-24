@@ -1,6 +1,9 @@
 import React,{useState, useEffect} from 'react'
+import Popup from './Popup'
+
 
 const useForm = (validate) => {
+
     const [values, setValues] = useState({
         name:'',
         email:'',
@@ -24,11 +27,12 @@ const useForm = (validate) => {
         e.preventDefault();
 
         setErrors(validate(values));
-        if(errors===''){
-            alert('Your Form is Submitted');
-        } else if(!errors){
-            alert('your form is not submitted')
-        }
+        // if(errors){
+        //     alert('Your Form is not Submitted');
+        // } else if(!errors){
+        //     alert('Your Form is Submitted');
+        // }
+
 
         alert('form submitted')
         console.log('form values', values)

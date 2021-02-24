@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 
 const Popup = () => {
     const [isModal, setModal] = useState(false);
+    // const [select, setSelect] = useState('');
 
     const handleOpen = () => {
         setModal(true);
@@ -15,17 +16,35 @@ const Popup = () => {
     const handleClose = () => {
         setModal(false);
     };
+    const [errors, setErrors] = useState({})
 
-    const { handleChange, values, handleSubmit, errors } = useForm(validate);
+    const { handleChange, values } = useForm(validate);
+
+    const handleSubmit = e => {
+        e.preventDefault();
+
+        setErrors(validate(values));
+        // if(errors){
+        //     alert('Your Form is not Submitted');
+        // } else if(!errors){
+        //     alert('Your Form is Submitted');
+        // }
+        
+        alert('form submitted')
+        console.log('form values', values)
+        setModal(false);
+        // handleClose;
+        // setIsSubmit(true);
+        
+    }
 
     return(
         <div> 
                     <button className='ui button btnrea' onClick={handleOpen}>Book Now</button>
                     <Modal className='modal' open={isModal} onClose={handleClose}>
                         <div className='popup'>
-                        
-                        <h2>Book an appointment</h2>
-                        <p>by filling in your details </p>
+                            <h2>Book an appointment</h2>
+                            <p>by filling in your details </p>
                         <form onSubmit={handleSubmit}>
                             <input
                                 type='name'
@@ -35,7 +54,7 @@ const Popup = () => {
                                 onChange={handleChange}
                                 required
                             />
-                             {/* {errors.name && <h4 className='errorp'>{errors.name}</h4>}  */}
+                            {errors.name && <h4 className='errorp'>{errors.name}</h4>} 
                             <input
                                 type='email'
                                 name='email'
@@ -44,7 +63,7 @@ const Popup = () => {
                                 onChange={handleChange}
                                 required
                             />
-                             {/* {errors.email && <h4 className='errorp'>{errors.email}</h4>}  */}
+                            {errors.email && <h4 className='errorp'>{errors.email}</h4>} 
                             <input
                                 type='tel'
                                 name='mobile'
@@ -54,24 +73,39 @@ const Popup = () => {
                                 pattern='[0-9]{10}'
                                 required
                             />
-                             {/* {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>}  */}
-                            <select name='select' value={values.select} required>
+                            {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>} 
+                            {/* <select name='select' value={values.select} required>
                                 <option name='option' value={values.option}>Test & Packages</option>
                                 <option name='option' value={values.option}>Blue</option>
                                 <option name='option' value={values.option}>Bank</option>
+                            </select> */}
+                            {/* {console.log(select)} */}
+                            <select name='select'
+                            defaultValue={values.select}
+                            onChange={handleChange}
+                            required
+                            >
+                                <option value=''>Test & Packages</option>
+                                <option value='Blue'>Blue</option>
+                                <option value='Bank'>Bank</option>
                             </select>
+                            {/* {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>} */}
                             <TextField
                                 id="datetime-local"
                                 type="datetime-local"
-                                defaultValue="2020-05-24T10:30"
+                                value={values.textField}
+                                name='textField'
                                 className={values.textField}
+                                onChange={handleChange}
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
                             />
+                            {/* {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>} */}
                             <div>
-                                <button type='submit' className='ui button newbtn'>Submit</button>
-                                <button onClick={handleClose} className='ui button cancelbtn'>Cancel</button>
+                                {/* <Link to='/'> */}
+                                    <button type='submit' className='ui button newbtn'>Submit</button>
+                                {/* </Link> */}
                             </div>
                         </form>
                         <h3>OR</h3>
