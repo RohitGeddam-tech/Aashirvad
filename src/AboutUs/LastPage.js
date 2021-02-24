@@ -47,7 +47,8 @@ const LastPage =()=>{
     return(
         <div className='LastPage'>
             {isMobile ? <NewIntro /> : <Intro />}
-            {isMobile ? <Slider /> : <Desktop />}
+            {/* {isMobile ? <Slider /> : <Desktop />} */}
+            <Slider />
         </div>
     )
 }

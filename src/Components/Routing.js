@@ -5,8 +5,6 @@ import FullPage from '../AboutUs/FullPage';
 import Contacts from './Contacts';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Form from './Form';
-import NewForm from '../Form/NewForm';
-import Trial from '../Form/Trial';
 
 const Routing = () => {
     const [isMobile, setMobile] = useState(

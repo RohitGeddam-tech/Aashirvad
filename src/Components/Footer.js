@@ -16,13 +16,13 @@ const Desktop = () => {
             <div className="midline"></div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>
-                <Link to='/Aashirvad/About'><a><i className="big facebook icon"></i></a></Link>
-                <Link to='/Aashirvad/About'><a><i className="big instagram icon"></i></a></Link>
-                <Link to='/Aashirvad/About'><a><i className="big linkedin icon"></i></a></Link>
+                <Link to='/Aashirvad/About'><i className="big facebook icon"></i></Link>
+                <Link to='/Aashirvad/About'><i className="big instagram icon"></i></Link>
+                <Link to='/Aashirvad/About'><i className="big linkedin icon"></i></Link>
                 </div>
             </div>
             <div className='lastrectangle'>
-                <h3 className='lineatthelast'>copyright   <i class="copyright outline icon"></i>  2020 All Rights reserved </h3>
+                <h3 className='lineatthelast'>copyright   <i className="copyright outline icon"></i>  2020 All Rights reserved </h3>
             </div>
         </div>
     )
@@ -42,13 +42,13 @@ const Mobile = () => {
             </div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>
-                <Link to='/Aashirvad/About'><a><i className="big facebook icon"></i></a></Link>
-                <Link to='/Aashirvad/About'><a><i className="big instagram icon"></i></a></Link>
-                <Link to='/Aashirvad/About'><a><i className="big linkedin icon"></i></a></Link>
+                <Link to='/Aashirvad/About'><i className="big facebook icon"></i></Link>
+                <Link to='/Aashirvad/About'><i className="big instagram icon"></i></Link>
+                <Link to='/Aashirvad/About'><i className="big linkedin icon"></i></Link>
                 </div>
             </div>
             <div className='lastrectangle'>
-                <h3 className='lineatthelast'>copyright   <i class="copyright outline icon"></i>  2020 All Rights reserved </h3>
+                <h3 className='lineatthelast'>copyright   <i className="copyright outline icon"></i>  2020 All Rights reserved </h3>
             </div>
         </div>
     )

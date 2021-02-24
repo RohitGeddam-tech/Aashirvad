@@ -25,27 +25,27 @@ const List = () => {
     
     return (
         // <div style={style}>
-        <div class="ui secondary  menu">
+        <div className="ui secondary  menu">
             <Link style={{ marginTop: '10px' }} to='/Aashirvad/About'>
-                <a href='/Aashirvad/About' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+                <button href='/Aashirvad/About' className="ui button item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     About Us
-                    </a>
+                    </button>
             </Link>
             <Link style={{ marginTop: '10px' }} to='/Aashirvad/Pathology'>
-                <a href='/Aashirvad/Pathology' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+                <button href='/Aashirvad/Pathology' className="ui button item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     Pathological Equipments
-                    </a>
+                    </button>
             </Link>
             {/* <Link style={{ marginTop: '10px' }} to='/Aashirvad/Contacts'> */}
-                <a href='#msheet' class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)', marginTop: '3.5px' }}>
+                <a href='#msheet' className="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)', marginTop: '3.5px' }}>
                     Contact Us
                 </a>
             {/* </Link> */}
             
-                { isMobile ? <div class="item mobbtn"> <Link to='/Aashirvad/Form'> <button class="ui button">
+                { isMobile ? <div className="item mobbtn"> <Link to='/Aashirvad/Form'> <button className="ui button">
                     BOOK AN APPOINTMENT
                 </button> </Link> </div> : 
-                   <div class="item mobbtn">  <Popup /> </div>
+                   <div className="item mobbtn">  <Popup /> </div>
                 }
         
         </div>
@@ -66,20 +66,20 @@ const MobileList = () => {
             </a>
             {isActive && <div className='navbtn'>
                 <Link to='/Aashirvad/About' style={{ marginTop: '25px' }}>
-                    <a onClick={()=>{setActive(!isActive)}} className='item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> About Us</a>
+                    <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> About Us</button>
                 </Link>
                 <Link style={{ marginTop: '25px' }} to='/Aashirvad/Pathology'>
-                    <a onClick={()=>{setActive(!isActive)}} className='item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Pathological Equipments</a>
+                    <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Pathological Equipments</button>
                 </Link>
                 {/* <Link style={{ marginTop: '25px' }} to='/Aashirvad/Contacts'>
                     <a onClick={()=>{setActive(!isActive)}} className='item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</a>
                 </Link> */}
-                <a href='#msheet' onClick={()=>{setActive(!isActive)}} class="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+                <a href='#msheet' onClick={()=>{setActive(!isActive)}} className="ui item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
                     Contact Us
                 </a>
-                <div class="itembtn">
+                <div className="itembtn">
                     <Link style={{ marginTop: '25px' }} to='/Aashirvad/Form'>
-                        <button onClick={()=>{setActive(!isActive)}} class="ui button">BOOK AN APPOINTMENT</button>
+                        <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
                     </Link>
                 </div>
             </div>}

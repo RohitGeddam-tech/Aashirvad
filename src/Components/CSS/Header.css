@@ -59,12 +59,24 @@ header{
 
 .navbtn{
   width: 100%;
-  height: 200px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   z-index: 99;
+}
+
+.ui.button.item.itemname{
+  background-color: white;
+  color: #7B7F8C !important;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat' !important;
+  text-transform: capitalize !important;
+}
+
+.ui.button.item.itemname:hover{
+  color: #092F57 !important;
 }
 
 .icon{
@@ -73,10 +85,11 @@ header{
 
 a.item.itemname{
   color: #7B7F8C !important;
-  margin-top: 25px;
+  margin-top: 28px;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Montserrat' !important;
+  background-color: #fff !important;
 }
 
 a.item.itemname:hover{

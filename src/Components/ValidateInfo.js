@@ -21,6 +21,14 @@ const ValidateInfo = (values) => {
         errors.mobile = 'The Mobile no. entered is Invalid'
     }
 
+    if(!values.select.trim()){
+        errors.select = 'This field is required'
+    }
+
+    if(!values.textField.trim()){
+        errors.textField = 'This field is required'
+    }
+
     return errors;
 }
 

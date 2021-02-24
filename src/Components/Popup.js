@@ -40,7 +40,7 @@ const Popup = () => {
 
     return(
         <div> 
-                    <button class="ui button" onClick={handleOpen}>
+                    <button className="ui button" onClick={handleOpen}>
                         BOOK AN APPOINTMENT
                     </button>
                     <Modal className='modal' open={isModal} onClose={handleClose}>
@@ -92,6 +92,7 @@ const Popup = () => {
                                 <option value='Blue'>Blue</option>
                                 <option value='Bank'>Bank</option>
                             </select>
+                            {errors.select && <h4 className='errorp'>{errors.select}</h4>} 
                             <TextField
                                 id="datetime-local"
                                 type="datetime-local"
@@ -103,6 +104,7 @@ const Popup = () => {
                                     shrink: true,
                                 }}
                             />
+                            {errors.textField && <h4 className='errorp'>{errors.textField}</h4>} 
                             <div>
                                 <button type='submit' className='ui button newbtn'>Submit</button>
                             </div>

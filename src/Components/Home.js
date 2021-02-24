@@ -25,10 +25,10 @@ const List = () => {
                 <p className="lead p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                 </p>
-                { isMobile ? <div class="item vb"> <Link to='/Aashirvad/Form'> <button class="ui button">
+                { isMobile ? <div className="item vb"> <Link to='/Aashirvad/Form'> <button className="ui button">
                     BOOK AN APPOINTMENT
                 </button> </Link> </div> : 
-                    <div class="item vb"> 
+                    <div className="item vb"> 
                     <Popup />
                 </div>
                 }

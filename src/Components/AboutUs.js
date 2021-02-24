@@ -68,8 +68,3 @@ const AboutUs = () => {
 }
 
 export default AboutUs;
-
-{/* <div className='mobsecbox'>
-                <img className='mobfirstimg' src={firstcircle} alt='...'/>
-                <img className='mobboximg' src={secondcircle} alt='...'/>
-            </div> */}

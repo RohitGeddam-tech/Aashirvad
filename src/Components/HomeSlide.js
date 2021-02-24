@@ -25,7 +25,7 @@ export default class SimpleSlider extends Component {
                     </p>
                     <div className='item mobbutton'>
                       <Link to='/Aashirvad/Form'> 
-                        <button class="ui button">
+                        <button className="ui button">
                           BOOK AN APPOINTMENT
                         </button> 
                       </Link> 
@@ -42,7 +42,7 @@ export default class SimpleSlider extends Component {
                     </p>
                     <div className='item mobbutton'>
                     <Link to='/Aashirvad/Form'> 
-                        <button class="ui button">
+                        <button className="ui button">
                           BOOK AN APPOINTMENT
                         </button> 
                       </Link> 
@@ -59,7 +59,7 @@ export default class SimpleSlider extends Component {
                     </p>
                     <div className='item mobbutton'>
                     <Link to='/Aashirvad/Form'> 
-                        <button class="ui button">
+                        <button className="ui button">
                           BOOK AN APPOINTMENT
                         </button> 
                       </Link> 
