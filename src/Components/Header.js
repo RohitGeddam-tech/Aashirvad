@@ -3,7 +3,8 @@ import './CSS/Header.css';
 import { BsX } from 'react-icons/bs';
 import logo from './Photos/logo.svg';
 import { Link } from 'react-router-dom';
-import Popup from './Popup'
+import Popup from './Popup';
+import Hamburger from 'hamburger-react'
 
 // ReactModal.setAppElement('#main');
 // const Contact = () => {
@@ -21,7 +22,6 @@ const List = () => {
             setMobile(window.matchMedia('(max-height:570px)').matches)
         })
     })
-
     
     return (
         // <div style={style}>
@@ -54,6 +54,7 @@ const List = () => {
 
 const MobileList = () => {
     const [isActive, setActive] = useState(false);
+
     return (
         <>
             <a
@@ -62,7 +63,8 @@ const MobileList = () => {
                     setActive(!isActive);
                 }}
             >
-                {isActive ? <BsX size='35px' /> : <i className='large bars icon'></i>}
+                {/* {isActive ? <BsX size='35px' /> : <i className='large bars icon'></i>} */}
+                <Hamburger direction='left' className='ham' duration={0.2} color='black' toggled={isActive} toggle={setActive} />
             </a>
             {isActive && <div className='navbtn'>
                 <Link to='/Aashirvad/About' style={{ marginTop: '25px' }}>
@@ -82,7 +84,7 @@ const MobileList = () => {
                         <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
                     </Link>
                 </div>
-            </div>}
+            </div>} 
         </>
     )
 }

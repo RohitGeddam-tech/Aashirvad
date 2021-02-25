@@ -64,6 +64,8 @@ header{
   justify-content: center;
   align-items: center;
   z-index: 99;
+  transition: all 10s ease-in !important;
+  nav-down: auto;
 }
 
 .ui.button.item.itemname{
@@ -78,6 +80,10 @@ header{
 .ui.button.item.itemname:hover{
   color: #092F57 !important;
 }
+
+/* .ham{
+  transition: all 50s ease;
+} */
 
 .icon{
   cursor: pointer;

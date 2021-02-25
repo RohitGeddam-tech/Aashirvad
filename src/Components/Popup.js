@@ -24,15 +24,30 @@ const Popup = () => {
         e.preventDefault();
 
         setErrors(validate(values));
-        // if(errors){
+        // if(values==''){
         //     alert('Your Form is not Submitted');
-        // } else if(!errors){
-        //     alert('Your Form is Submitted');
+        //     setModal(true)
         // }
+        // //  else if(!errors){
+        // //     alert('Your Form is Submitted');
+        // // }
+
+        // if(errors==={}){
+        //     alert('not submited')
+        // } else if(errors===''){
+        //     alert('form is not submitted')
+        // } else 
+        if(!values.name, !values.email, !values.mobile, !values.select, !values.textField){
+            alert('fill in the values')
+        }else if(values.name, values.email, values.mobile, values.select, values.textField){
+            alert('form submitted');
+            setModal(false)
+        }
         
-        alert('form submitted')
+        // alert('form submitted')
         console.log('form values', values)
-        setModal(false);
+        console.log('form errors', errors)
+        // setModal(false);
         // handleClose;
         // setIsSubmit(true);
         
@@ -55,7 +70,7 @@ const Popup = () => {
                                 placeholder='Enter Your Name'
                                 value={values.name}
                                 onChange={handleChange}
-                                required
+                                // required
                             />
                             {errors.name && <h4 className='errorp'>{errors.name}</h4>} 
                             <input
@@ -64,7 +79,7 @@ const Popup = () => {
                                 placeholder='Enter Your Email'
                                 value={values.email}
                                 onChange={handleChange}
-                                required
+                                // required
                             />
                             {errors.email && <h4 className='errorp'>{errors.email}</h4>} 
                             <input
@@ -74,7 +89,7 @@ const Popup = () => {
                                 value={values.mobile}
                                 onChange={handleChange}
                                 pattern='[0-9]{10}'
-                                required
+                                // required
                             />
                             {errors.mobile && <h4 className='errorp'>{errors.mobile}</h4>} 
                             {/* <select name='select' value={values.select} required>
@@ -86,7 +101,7 @@ const Popup = () => {
                             <select name='select'
                             defaultValue={values.select}
                             onChange={handleChange}
-                            required
+                            // required
                             >
                                 <option value=''>Test & Packages</option>
                                 <option value='Blue'>Blue</option>
